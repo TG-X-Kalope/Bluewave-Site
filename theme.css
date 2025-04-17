@@ -1,0 +1,48 @@
+:root {
+    /* Primary Colors */
+    --color-primary-dark: #1B3665;
+    --color-primary: #0077C8;
+    --color-accent: #68B35A;
+  
+    /* Neutral Colors */
+    --color-dark: #222222;
+    --color-light: #F0F0F0;
+    --color-white: #ffffff;
+  
+    /* Text Colors */
+    --text-primary: var(--color-dark);
+    --text-light: var(--color-white);
+    --text-muted: #666666;
+  
+    /* Background Colors */
+    --bg-primary: var(--color-primary);
+    --bg-light: var(--color-light);
+    --bg-dark: var(--color-dark);
+    --bg-white: var(--color-white);
+  
+    /* Border Colors */
+    --border-light: #e0e0e0;
+    --border-dark: var(--color-dark);
+    --border-accent: var(--color-accent);
+  
+    /* Button Colors */
+    --btn-primary-bg: var(--color-primary);
+    --btn-primary-hover: #005fa3;
+    --btn-accent-bg: var(--color-accent);
+    --btn-accent-hover: #4d8e47;
+    --btn-disabled-bg: #cccccc;
+  
+    /* Others */
+    --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --box-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --radius-small: 4px;
+    --radius-medium: 8px;
+    --radius-large: 16px;
+  
+    /* Fonts */
+    --font-base: 'Inter', sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 20px;
+  }
+  
