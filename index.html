@@ -20,16 +20,40 @@
         <div class="hero-overlay">
             <header class="navbar">
                 <div class="logo">TransCab</div>
-                <nav class="nav-links">
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <div class="dropdown-card" id="dropdownCard">
+                        <div class="dropdown-links">
+                            <a href="#">Home</a>
+                            <hr />
+                            <a href="#">Services</a>
+                            <hr />
+                            <a href="#">Bookings</a>
+                            <hr />
+                            <a href="#">Contact</a>
+                            <hr />
+                            <button class="btn-primary">Track Ride</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <nav class="nav-links" id="nav-links">
                     <a href="#">Home</a>
                     <a href="#">Services</a>
                     <a href="#">Bookings</a>
                     <a href="#">Contact</a>
                 </nav>
-                <div class="cta">
+
+                <div class="cta" id="cta-btn">
                     <button class="btn-primary">Track Ride</button>
                 </div>
             </header>
+
 
             <div class="hero-content">
                 <h1>Safe & Reliable Employee Transportation</h1>
@@ -40,17 +64,13 @@
     </section>
     <section class="overview">
         <div class="overview-container">
-            <!-- LEFT: Text Section -->
+            <!-- LEFT: TEXT & TREE -->
             <div class="overview-text">
-                <h2 class="section-title">Employee Transportation Services</h2>
-                <p class="section-description">
-                    We provide seamless, reliable transportation solutions for employees across industries, focused on
-                    convenience and safety.
-                </p>
-
+                <h2 class="section-title">Our Services Overview</h2>
+                <p class="section-description">Explore how we provide seamless transportation service with top-notch
+                    professionalism.</p>
                 <!-- Tree-based Service Layout -->
                 <div class="service-tree">
-                    <div class="tree-line"></div>
 
                     <div class="tree-item">
                         <div class="tree-icon">
@@ -58,7 +78,8 @@
                         </div>
                         <div class="tree-content">
                             <h4>Shuttle Services for Offices</h4>
-                            <p>Fixed-route shuttles connecting workspaces with popular residential areas for hassle-free
+                            <p>Fixed-route shuttles connecting workspaces with popular residential areas for
+                                hassle-free
                                 daily travel.</p>
                         </div>
                     </div>
@@ -69,7 +90,8 @@
                         </div>
                         <div class="tree-content">
                             <h4>Long-term Corporate Contracts</h4>
-                            <p>Custom transportation plans for businesses under long-term contracts with flexible fleet
+                            <p>Custom transportation plans for businesses under long-term contracts with flexible
+                                fleet
                                 management.</p>
                         </div>
                     </div>
@@ -80,19 +102,23 @@
                         </div>
                         <div class="tree-content">
                             <h4>Tracking & Safety Features</h4>
-                            <p>GPS tracking, SOS support, and verified drivers for maximum safety and monitoring during
+                            <p>GPS tracking, SOS support, and verified drivers for maximum safety and monitoring
+                                during
                                 commutes.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
-            <!-- RIGHT: Image -->
+            <!-- RIGHT: IMAGE -->
             <div class="overview-image">
-                <img src="./asests/overview2.jpg" alt="Transportation Overview" />
+                <img src="./asests/overview2.jpg" alt="Service Image" />
             </div>
         </div>
     </section>
+
+
 
 
     <section class="booking-process-section">
@@ -143,58 +169,91 @@
 
 
 
-
     <section class="why-choose-section">
         <h2 class="section-title">Why Choose Us</h2>
         <div class="features">
-
-            <div class="card punctuality">
-                <div class="icon"><i class="fas fa-clock"></i></div>
-                <h3>Punctuality</h3>
-                <p>Consistent pickup & drop on schedule</p>
+      
+          <div class="card punctuality">
+            <div class="icon-wrapper">
+              <div class="icon"><i class="fas fa-clock"></i></div>
             </div>
-
-            <div class="card safety">
-                <div class="icon"><i class="fas fa-shield-alt"></i></div>
-                <h3>Safety First</h3>
-                <p>Verified drivers, sanitized vehicles</p>
+            <h3>Punctuality</h3>
+            <p>Consistent pickup & drop on schedule</p>
+          </div>
+      
+          <div class="card safety">
+            <div class="icon-wrapper">
+              <div class="icon"><i class="fas fa-shield-alt"></i></div>
             </div>
-
-            <div class="card tracking">
-                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                <h3>Live Tracking</h3>
-                <p>Track your vehicle and employee in real time</p>
+            <h3>Safety First</h3>
+            <p>Verified drivers, sanitized vehicles</p>
+          </div>
+      
+          <div class="card tracking">
+            <div class="icon-wrapper">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
             </div>
-
-            <div class="card plans">
-                <div class="icon"><i class="fas fa-route"></i></div>
-                <h3>Custom Plans</h3>
-                <p>Routes tailored for each company</p>
+            <h3>Live Tracking</h3>
+            <p>Track your vehicle and employee in real time</p>
+          </div>
+      
+          <div class="card plans">
+            <div class="icon-wrapper">
+              <div class="icon"><i class="fas fa-route"></i></div>
             </div>
-
+            <h3>Custom Plans</h3>
+            <p>Routes tailored for each company</p>
+          </div>
+      
         </div>
-    </section>
-    <section class="how-it-works-section">
+      </section>
+
+
+
+      <section class="how-it-works-section">
         <h2 class="section-title">How It Works</h2>
         <div class="how-it-works">
-            <div class="how-step">
-                <img src="./asests/consultantimg.gif" alt="Consultation Icon" class="step-icon">
-                <h3>1. Consultation</h3>
+      
+          <div class="step-wrapper">
+            <div class="step-border">
+              <div class="how-step">
+                <div class="step-icon-wrapper">
+                <img src="./asests/consultantimg.gif" alt="Consultation Icon" class="step-icon" />
+            </div>
+                <h3>Consultation</h3>
                 <p>Tell us your transport needs</p>
+              </div>
             </div>
-            <div class="how-step">
-                <img src="./asests/Planning.gif" alt="Planning Icon" class="step-icon">
-                <h3>2. Planning</h3>
+          </div>
+      
+          <div class="step-wrapper">
+            <div class="step-border">
+              <div class="how-step">
+                <div class="step-icon-wrapper">
+                <img src="./asests/Planning.gif" alt="Planning Icon" class="step-icon" />
+            </div>
+                <h3>Planning</h3>
                 <p>We propose optimal routes and costs</p>
+              </div>
             </div>
-            <div class="how-step">
-                <img src="./asests/Onboarding.gif" alt="Onboarding Icon" class="step-icon">
-                <h3>3. Onboarding</h3>
+          </div>
+      
+          <div class="step-wrapper">
+            <div class="step-border">
+              <div class="how-step">
+                <div class="step-icon-wrapper">
+                   
+                <img src="./asests/Onboarding.gif" alt="Onboarding Icon" class="step-icon" />
+            </div>
+                <h3>Onboarding</h3>
                 <p>We launch service for your employees</p>
+              </div>
             </div>
+          </div>
+      
         </div>
-    </section>
-
+      </section>
+      
     <section class="testimonials-section">
         <h2 class="section-title">What Our Clients Say</h2>
         <div class="features">
@@ -207,8 +266,8 @@
                     <div class="client-meta">
                         <strong>— HR, XYZ Corp</strong>
                         <div class="rating">
-                            ⭐⭐⭐⭐⭐
-                        </div>
+                            ⭐ 5.0/5
+                          </div>
                     </div>
                 </div>
             </div>
@@ -221,8 +280,9 @@
                     <div class="client-meta">
                         <strong>— Admin, BrightTech</strong>
                         <div class="rating">
-                            ⭐⭐⭐⭐☆
-                        </div>
+                            ⭐ 4.5/5
+                          </div>
+                          
                     </div>
                 </div>
             </div>
@@ -235,8 +295,8 @@
                     <div class="client-meta">
                         <strong>— HR, XYZ Corp</strong>
                         <div class="rating">
-                            ⭐⭐⭐⭐⭐
-                        </div>
+                            ⭐ 5.0/5
+                          </div>
                     </div>
                 </div>
             </div>
@@ -263,115 +323,120 @@
             </div>
             <div class="card">
                 <div class="card-banner">
-                  <img src="./asests/corporate.webp" alt="Icon" />
+                    <img src="./asests/corporate.webp" alt="Icon" />
                 </div>
                 <h3>Corporate Carpooling: Why It’s the Future</h3>
                 <p>Eco-friendly, cost-effective and socially responsible.</p>
                 <a href="#" class="btn-read-more">Read More</a>
-              </div>
-              
-              <div class="card">
+            </div>
+
+            <div class="card">
                 <div class="card-banner">
-                  <img src="./asests/benefits-employee-transport-software-768x512.jpg" alt="Icon" />
+                    <img src="./asests/benefits-employee-transport-software-768x512.jpg" alt="Icon" />
                 </div>
                 <h3>Corporate Carpooling: Why It’s the Future</h3>
                 <p>Eco-friendly, cost-effective and socially responsible.</p>
                 <a href="#" class="btn-read-more">Read More</a>
-              </div>
-                <div class="card">
-                    <div class="card-banner">
-                      <img src="./asests/corporate.webp" alt="Icon" />
-                    </div>
-                    <h3>Corporate Carpooling: Why It’s the Future</h3>
-                    <p>Eco-friendly, cost-effective and socially responsible.</p>
-                    <a href="#" class="btn-read-more">Read More</a>
-                  </div>
             </div>
-            <div class="arrow right-arrow">
-                <img src="./asests/rightarrows.gif" alt="Right Arrow" />
+            <div class="card">
+                <div class="card-banner">
+                    <img src="./asests/corporate.webp" alt="Icon" />
+                </div>
+                <h3>Corporate Carpooling: Why It’s the Future</h3>
+                <p>Eco-friendly, cost-effective and socially responsible.</p>
+                <a href="#" class="btn-read-more">Read More</a>
             </div>
+        </div>
+        <div class="arrow right-arrow">
+            <img src="./asests/rightarrows.gif" alt="Right Arrow" />
+        </div>
         </div>
     </section>
 
     <section class="contact-section">
         <div class="overlay">
-          <div class="contact-content">
-            <div class="contact-left">
-              <h2>Contact Us</h2>
-              <p>We’re here to help. Send your query or feedback.</p>
-              <form>
-                <input type="text" placeholder="Name" required />
-                <input type="email" placeholder="Email" required />
-                <textarea rows="3" placeholder="Message" required></textarea>
-                <button type="submit">Send</button>
-              </form>
-      
-              <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-      
-            <div class="contact-right">
-              <img src="./asests/contact-us.png" alt="Contact Sticker" class="animated-sticker" />
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7148858399633!2d90.39151707428178!3d23.7933202871267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a755577d83%3A0x20f90541dc164703!2sDhaka!5e0!3m2!1sen!2sbd!4v1679999999999"
-                  width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      
-      <footer class="footer-section">
-        <div class="zigzag-bg">
-          <div class="footer-content container">
-            <div class="footer-logo">
-              <img src="./asests/circle.png" alt="BlueWave Logo" />
-              <p>BlueWave Transport — reliable, safe & timely employee travel.</p>
-            </div>
-      
-            <div class="footer-grid">
-              <div>
-                <h4>Quick Links</h4>
-                <ul>
-                  <li><a href="/">Home</a></li>
-                  <li><a href="/services">Services</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                </ul>
-              </div>
-      
-              <div>
-                <h4>Contact Info</h4>
-                <ul>
-                  <li>Email: info@bluewave.com</li>
-                  <li>Phone: +91 98765 43210</li>
-                </ul>
-              </div>
-      
-              <div>
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
+            <div class="contact-content">
+                <div class="contact-left">
+                    <h2>Contact Us</h2>
+                    <p>We’re here to help. Send your query or feedback.</p>
+                    <form>
+                        <input type="text" placeholder="Name" required />
+                        <input type="email" placeholder="Email" required />
+                        <textarea rows="3" placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
-              </div>
+
+                <div class="contact-right">
+                    <img src="./asests/contact-us.png" alt="Contact Sticker" class="animated-sticker" />
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.7148858399633!2d90.39151707428178!3d23.7933202871267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a755577d83%3A0x20f90541dc164703!2sDhaka!5e0!3m2!1sen!2sbd!4v1679999999999"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="zigzag-bg">
+            <div class="footer-content container">
+                <div class="footer-logo">
+                    <img src="./asests/circle.png" alt="BlueWave Logo" />
+                    <p>BlueWave Transport — reliable, safe & timely employee travel.</p>
+                </div>
+
+                <div class="footer-grid">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>Email: info@bluewave.com</li>
+                            <li>Phone: +91 98765 43210</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 BlueWave Transport</p>
+            <div class="footer-animation-container"></div>
+            <div class="footer-bg"></div>
+            <div class="moving-car">
+              <img src="./asests/Corporate Ride on a Smooth Journey.png" class="cab-animation" />
             </div>
           </div>
-        </div>
-      
-        <div class="footer-bottom">
-          <p>© 2025 BlueWave Transport</p>
-          <img src="./asests/footeranim.png"  class="cab-animation" />
-        </div>
-      </footer>
-      
+          </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
