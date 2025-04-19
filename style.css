@@ -1639,7 +1639,8 @@ form button {
     padding: 20px;
     text-align: center;
     position: relative;
-}
+    overflow: hidden; /* 🔥 Key line to hide overflowing animation */
+  }
 
 .footer-bottom p {
     margin: 0;
@@ -1759,6 +1760,10 @@ form button {
     /* your preferred size */
     animation: driveCar 15s linear infinite;
 }
+
+.footer-animation-wrapper {
+    height: 60px; /* Adjust height on smaller screens */
+  }
 
 /* Car driving from left to right */
 @keyframes driveCar {
