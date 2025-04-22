@@ -160,48 +160,40 @@
 
     <section class="booking-process-section">
         <div class="booking-container">
-
-            <!-- Left: Image -->
+          <h2 class="booking-title">Booking Process Overview</h2>
+      
+         <!-- Tab Bar with Icons -->
+    <div class="tab-bar">
+        <div class="tab-button active" onclick="showStep(0)">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Step 1</span>
+        </div>
+        <div class="tab-button" onclick="showStep(1)">
+          <i class="fas fa-calendar-check"></i>
+          <span>Step 2</span>
+        </div>
+        <div class="tab-button" onclick="showStep(2)">
+          <i class="fas fa-car-side"></i>
+          <span>Step 3</span>
+        </div>
+      </div>
+      
+          <!-- Booking Content Area -->
+          <div class="booking-content">
             <div class="booking-image">
-                <img src="./asests/bookingimg.png" alt="Employee booking shuttle">
+              <img id="step-img" src="./asests/bookingimg.png" alt="Step Image">
             </div>
-
-            <!-- RIGHT TEXT SIDE -->
-            <!-- Right: Booking Steps (Updated) -->
-            <div class="booking-process">
-                <h3 class="booking-title">Booking Process Overview</h3>
-                <p class="booking-subtitle">
-                    Our simplified process ensures quick and efficient cab booking for employees and corporates alike:
-                </p>
-
-                <div class="simple-steps">
-                    <div class="step-block">
-                        <div class="step-number">1</div>
-                        <div class="step-info">
-                            <h4>Select Service Type</h4>
-                            <p>Choose between shuttle service, corporate contract, or on-demand cab.</p>
-                        </div>
-                    </div>
-
-                    <div class="step-block">
-                        <div class="step-number">2</div>
-                        <div class="step-info">
-                            <h4>Enter Ride Details</h4>
-                            <p>Provide pickup/drop locations and preferred timings for the ride.</p>
-                        </div>
-                    </div>
-
-                    <div class="step-block">
-                        <div class="step-number">3</div>
-                        <div class="step-info">
-                            <h4>Confirm & Track</h4>
-                            <p>Finalize the booking and get real-time updates and trip status.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="booking-info">
+              <h3 id="step-title">Select Service Type</h3>
+              <p id="step-desc">
+                Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs.
+                Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs.
+              </p>
             </div>
-
-    </section>
+          </div>
+        </div>
+      </section>
+      
 
 
 
