@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
   // Add/remove class on scroll
   window.addEventListener("scroll", function () {
@@ -123,7 +123,7 @@ startSlider();
     document.querySelectorAll('.tab-button').forEach((btn, i) => {
       btn.classList.toggle('active', i === index);
     });
-=======
+
 
   // Add/remove class on scroll
   window.addEventListener("scroll", function () {
@@ -248,5 +248,5 @@ startSlider();
     document.querySelectorAll('.tab-button').forEach((btn, i) => {
       btn.classList.toggle('active', i === index);
     });
->>>>>>> 28667e5a5d79a40de825a6b28544b4fdf329905d
+
   }
