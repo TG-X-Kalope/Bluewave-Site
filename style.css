@@ -1804,19 +1804,6 @@ form button {
     transition: color 0.3s ease;
 }
 
-
-footer {
-    background: var(--bg-dark);
-    color: white;
-    padding: 2rem;
-}
-
-footer .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-
 .footer-grid a:hover {
     color: var(--color-accent);
 }
@@ -1843,7 +1830,6 @@ footer .footer-grid {
     text-align: center;
     position: relative;
     overflow: hidden;
-    /* 🔥 Key line to hide overflowing animation */
 }
 
 .footer-bottom p {
@@ -1852,71 +1838,23 @@ footer .footer-grid {
     font-size: 13px;
 }
 
-.footer-animation {
-    max-width: 120px;
-    margin-top: 10px;
-    animation: floatCab 3s ease-in-out infinite;
-}
-
-/* Floating animation */
-@keyframes floatCab {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-6px);
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-grid {
-        justify-content: center;
-        gap: 40px;
-    }
-}
-
 .footer-animation-container {
-    width: 300px;
-    /* ya jitna chhota chahiye */
+    width: 200px;
     max-width: 100%;
     height: auto;
     display: block;
-    width: 200px;
     transform: scale(0.8);
-    margin: 0 auto;
-    margin-top: 50px;
-    /* center me dikhane ke liye */
+    margin: 50px auto 0;
 }
 
 .footer-bg {
     position: absolute;
     width: 200%;
     height: 30%;
-    background: url('./asests/office-building\ \(1\).png') repeat-x;
-    /* background: url('./asests/building\ \(1\).png') repeat-x; */
+    background: url('./asests/office-building (1).png') repeat-x;
     background-size: contain;
     animation: scroll-bg 15s linear infinite;
     z-index: 0;
-}
-
-.footer-car {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    z-index: 0;
-    animation: floatCar 15s ease-in-out infinite;
 }
 
 @keyframes scroll-bg {
@@ -1929,37 +1867,12 @@ footer .footer-grid {
     }
 }
 
-@keyframes floatCar {
-
-    0%,
-    100% {
-        transform: translateX(-50%) translateY(0);
-    }
-
-    50% {
-        transform: translateX(-50%) translateY(-8px);
-    }
-}
-
-.cab-animation {
-    width: 10px;
-    /* ya jitna chhota chahiye */
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 300px;
-    transform: scale(0.8);
-    margin: 0 auto;
-    /* center me dikhane ke liye */
-}
-
 .moving-car {
     overflow: hidden;
-    width: 80%;
-    margin-top: 80px;
+    width: 100%;
+    margin: 80px auto 0;
     position: relative;
     height: 100px;
-    /* adjust if needed */
 }
 
 .moving-car img {
@@ -1967,28 +1880,32 @@ footer .footer-grid {
     bottom: 0;
     left: -300px;
     width: 200px;
-    /* your preferred size */
     animation: driveCar 15s linear infinite;
 }
 
-.footer-animation-wrapper {
-    height: 60px;
-    /* Adjust height on smaller screens */
-}
-
-/* Car driving from left to right */
 @keyframes driveCar {
     0% {
         left: -300px;
-        transform: scaleX(1) rotate(0deg);
-    }
-
-    50% {
-        transform: scaleX(1) rotate(0deg);
+        transform: scaleX(1);
     }
 
     100% {
-        left: 100%;
-        transform: scaleX(1) rotate(0deg);
+        left: calc(100% + 300px); /* Move fully off the right */
+        transform: scaleX(1);
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-grid {
+        justify-content: center;
+        gap: 40px;
     }
 }
