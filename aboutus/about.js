@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
   // Add/remove class on scroll
   window.addEventListener("scroll", function () {
