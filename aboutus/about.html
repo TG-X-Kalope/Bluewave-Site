@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BlueWave</title>
+    <link rel="stylesheet" href="./../theme.css" />
+
+    <link rel="stylesheet" href="about.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <!-- ✅ HERO SECTION WITH BACKGROUND CAROUSEL -->
+    <section class="hero-section">
+
+
+        <!-- ✅ Your Overlay and Content -->
+
+        <header class="navbar">
+            <div class="logo"><img src="./../asests/Favicon A.svg" alt="logo" /></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+                <div class="dropdown-card" id="dropdownCard">
+                    <div class="dropdown-links">
+                        <a href="./../index.html">Home</a>
+                        <hr />
+                        <a href="class=" active>About</a>
+                        <hr />
+                        <a href="./../employservicetransport/ets.html">Services</a>
+                        <hr />
+                        <a href="#">Contact</a>
+                        <hr />
+                        <button class="btn-primary">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="./../index.html">Home</a>
+                <a href="#" class="active">About</a>
+                <a href="./../employservicetransport/ets.html">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="cta" id="cta-btn">
+                <button class="btn-primary">Get in Touch</button>
+            </div>
+        </header>
+        <div class="slider-wrapper" style="height: 100vh; overflow: hidden;">
+            <div class="slides">
+                <div class="slide" style="background-image: url('./../asests/heroimgabout.png');">
+                    <div class="hero-content">
+                        <h1>Safe & Reliable Employee Transportation</h1>
+                        <p>Efficient corporate cab solutions for hassle-free employee movement.</p>
+                        <button class="btn-primary">Book a Service</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('./../asests/heroimage-trp.png');">
+                    <div class="hero-content">
+                        <h1>Corporate Shuttle Made Easy</h1>
+                        <p>Seamless daily rides from home to office with comfort and punctuality.</p>
+                        <button class="btn-primary">View Shuttle Plans</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('./../asests/heroimage3.png');">
+                    <div class="hero-content">
+                        <h1>Track Your Ride in Real Time</h1>
+                        <p>SStay updated with GPS-enabled vehicles and live status updates.</p>
+                        <button class="btn-primary">Track Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moved inside slider-wrapper -->
+            <div class="nav-btn prev" onclick="showSlide(currentSlide - 1)"><i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="nav-btn next" onclick="showSlide(currentSlide + 1)"><i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="dots">
+                <div class="dot" onclick="showSlide(0)"></div>
+                <div class="dot" onclick="showSlide(1)"></div>
+                <div class="dot" onclick="showSlide(2)"></div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Mission Section -->
+    <section class="content-section mission-section">
+        <div class="container mission-wrapper">
+
+            <div class="mission-image">
+                <div class="zigzag-img">
+                    <img src="./../asests/aboutimg.png" alt="Mission Image" />
+                </div>
+            </div>
+            <div class="mission-text">
+                <h2 class="mission-title">Driving Dependability, Every Day</h2>
+                <p>
+                    At BlueWave, our mission is rooted in the belief that reliable transportation is the backbone of any
+                    thriving organization. We strive to revolutionize corporate and employee travel by offering
+                    solutions that are safe, punctual, and built for comfort. Our commitment extends beyond just
+                    transporting people — we aim to deliver peace of mind through seamless coordination, real-time
+                    tracking, and courteous service.<br><br>
+                    Whether it's daily office commutes or on-demand corporate transfers, BlueWave ensures every journey
+                    is marked by trust, consistency, and care. With a vision to make workforce mobility smarter and more
+                    sustainable, we integrate technology with a human touch — driving not just vehicles, but dependable
+                    experiences across every mile.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Journey Section -->
+    <section class="journey-section">
+        <div class="journey-flex">
+            <!-- Left: Text Content -->
+            <div class="journey-content">
+                <h2 class="journey-title">Our Journey</h2>
+                <p class="journey-description">
+                    Founded with a vision to streamline employee commute solutions, BlueWave began its operations in
+                    2022 with a single city and a small fleet...
+                </p>
+
+                <div class="timeline-step">
+                    <div class="timeline-year"><i class="fas fa-map-marker-alt"></i> 2022</div>
+                    <div class="timeline-desc">BlueWave was founded in Bihar with 5 vehicles</div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-year"><i class="fas fa-signal"></i> 2023</div>
+                    <div class="timeline-desc">Expanded to Patna, launched GPS tracking for all cabs</div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="timeline-year"><i class="fas fa-handshake"></i> 2024</div>
+                    <div class="timeline-desc">Signed 10+ enterprise clients across 3 cities</div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="timeline-year"><i class="fas fa-car-battery"></i> 2025</div>
+                    <div class="timeline-desc">Launching EV-fleet integration for sustainable commuting</div>
+                </div>
+            </div><!-- Add more steps here -->
+
+
+            <!-- Right: Image -->
+            <div class="journey-image">
+                <img src="./../asests/journeyimg.png" alt="BlueWave timeline illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <!-- Why Choose Us -->
+    <section class="why-choose-us-section">
+        <h2 class="why-choose-us-title">Why Choose BlueWave?</h2>
+        <div class="choose-us-wrapper">
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">⏰</span>
+                    </div>
+                    <h3>Punctual & Reliable</h3>
+                    <p>Guaranteed on-time pick-ups and drop-offs.</p>
+                </div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">🛡️</span>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Verified drivers, tracked rides, and 24/7 support.</p>
+                </div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">📍</span>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Live location tracking for all bookings.</p>
+                </div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">🏢</span>
+                    </div>
+                    <h3>Corporate Friendly</h3>
+                    <p>Flexible contracts tailored to business needs.</p>
+                </div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">♻️</span>
+                    </div>
+                    <h3>Sustainable Fleet</h3>
+                    <p>EVs and fuel-efficient vehicles for greener travel.</p>
+                </div>
+            </div>
+
+            <div class="step-wrapper">
+                <div class="how-step">
+                    <div class="step-icon-wrapper">
+                        <span class="step-icon">🤝</span>
+                    </div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. Simple, clear billing.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="why-extra-text">
+            We’re not just a cab service. We’re your mobility partner — blending technology, safety, and human touch to
+            move your workforce efficiently.
+        </p>
+    </section>
+
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="team-container">
+            <h2 class="team-heading">Meet the Minds Behind BlueWave</h2>
+            <p class="team-subtext">
+                Our leadership team brings years of experience in transportation, technology, and operations.
+                With a shared commitment to service excellence, the BlueWave crew works behind the scenes to ensure
+                smooth rides every single day.
+            </p>
+            <div class="team-cards">
+                <div class="team-card">
+                    <img src="./../asests/ChatGPT Image Apr 20, 2025, 08_51_02 AM.png" alt="Jyoti Kumari"
+                        class="team-img" />
+                    <h3>BlueWave</h3>
+                    <p><strong>Co-Founder & Operations Head</strong></p>
+                    <p>A tech enthusiast with a heart for logistics, BlueWave ensures BlueWave runs like clockwork.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="./../asests/ChatGPT Image Apr 20, 2025, 08_51_02 AM.png" alt="Jyoti Kumari"
+                        class="team-img" />
+                    <h3> BlueWave</h3>
+                    <p><strong>Co-Founder & Operations Head</strong></p>
+                    <p>A tech enthusiast with a heart for logistics, BlueWave ensures BlueWave runs like clockwork.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img src="./../asests/ChatGPT Image Apr 20, 2025, 08_51_02 AM.png" alt="Jyoti Kumari"
+                        class="team-img" />
+                    <h3> BlueWave</h3>
+                    <p><strong>Co-Founder & Operations Head</strong></p>
+                    <p>A tech enthusiast with a heart for logistics, BlueWave ensures BlueWave runs like clockwork.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="service-footprint">
+        <div class="container">
+            <h2 class="section-title">Our Service Footprint</h2>
+            <p class="section-subtitle">We proudly serve across India with regional offices and cab operations in key
+                metro and tier-2 cities.</p>
+
+            <div class="city-cards">
+                <div class="city-card">
+                    <div class="icon-container">
+                        <div class="client-image-container">
+                            <i class="fas fa-building"></i> <!-- Building icon for Head Office -->
+                        </div>
+                    </div>
+                    <h3 class="city-name">Patna</h3>
+                    <p class="city-description">Head Office</p>
+                </div>
+                <div class="city-card">
+                    <div class="icon-container">
+                        <div class="client-image-container">
+                            <i class="fas fa-car"></i> <!-- Car icon for Cab Services -->
+                        </div>
+                    </div>
+                    <h3 class="city-name">Ranchi</h3>
+                    <p class="city-description">Cab Services</p>
+                </div>
+
+                <div class="city-card">
+                    <div class="icon-container">
+                        <div class="client-image-container">
+                            <i class="fas fa-building"></i> <!-- Building icon for Head Office -->
+                        </div>
+                    </div>
+                    <h3 class="city-name">Patna</h3>
+                    <p class="city-description">Head Office</p>
+                </div>
+
+                <div class="city-card">
+                    <div class="icon-container">
+                        <div class="client-image-container">
+                            <i class="fas fa-car"></i> <!-- Car icon for Cab Services -->
+                        </div>
+                    </div>
+                    <h3 class="city-name">Ranchi</h3>
+                    <p class="city-description">Cab Services</p>
+                </div>
+                <!-- Add more city cards similarly -->
+            </div>
+
+            <div class="request-button-container">
+                <a href="/contact" class="request-button">Request Service in Your City</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="zigzag-bg">
+            <div class="footer-content container">
+                <div class="footer-logo">
+                    <img src="./../asests/Logo A.svg" alt="BlueWave Logo" />
+                    <p>BlueWave Transport — reliable, safe & timely employee travel.</p>
+                </div>
+
+                <div class="footer-grid">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/services">Services</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>Email: info@bluewave.com</li>
+                            <li>Phone: +91 98765 43210</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 BlueWave Transport</p>
+            <div class="footer-animation-container"></div>
+            <div class="footer-bg"></div>
+            <div class="moving-car">
+                <img src="./../asests/Corporate Ride on a Smooth Journey.png" class="cab-animation" />
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
+</html>
+<script src="./about.js"></script>
+</body>
+
+</html>
