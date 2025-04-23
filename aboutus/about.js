@@ -107,3 +107,5 @@ function revealSteps() {
 }
 
 window.addEventListener('scroll', revealSteps);
+
+ 
