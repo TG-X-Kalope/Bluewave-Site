@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BlueWave Mobility</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../theme.css">
+  <link rel="stylesheet" href="./contact.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+ 
+  
+</head>
+<body>
+  <!-- ✅ HERO SECTION WITH BACKGROUND CAROUSEL -->
+  <section class="hero-section">
+
+
+    <!-- ✅ Your Overlay and Content -->
+
+    <header class="navbar">
+        <div class="logo"><img src="./../asests/Favicon A.svg" alt="logo" /></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+            <div class="dropdown-card" id="dropdownCard">
+                <div class="dropdown-links">
+                    <a href="./../index.html">Home</a>
+                    <hr />
+                    <a href="./../aboutus/about.html">About</a>
+                    <hr />
+                    <a href="./../employservicetransport/ets.html">Services</a>
+                    <hr />
+                    <a href="#">Contact</a>
+                    <hr />
+                    <button class="btn-primary">Get in Touch</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-links" id="nav-links">
+            <a href="./../index.html" >Home</a>
+            <a href="./../aboutus/about.html">About</a>
+            <a href="./../employservicetransport/ets.html">Services</a>
+            <a href="#" class="active">Contact</a>
+        </nav>
+
+        <div class="cta" id="cta-btn">
+            <button class="btn-primary">Get in Touch</button>
+        </div>
+    </header>
+    <div class="slider-wrapper" style="height: 100vh; overflow: hidden;">
+        <div class="slides">
+            <div class="slide" style="background-image: url('./../asests/herobluewave.png');">
+                <div class="hero-content">
+                    <h1>Safe & Reliable Employee Transportation</h1>
+                    <p>Efficient corporate cab solutions for hassle-free employee movement.</p>
+                    <button class="btn-primary">Book a Service</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./../asests/heroimage-trp.png');">
+                <div class="hero-content">
+                    <h1>Corporate Shuttle Made Easy</h1>
+                    <p>Seamless daily rides from home to office with comfort and punctuality.</p>
+                    <button class="btn-primary">View Shuttle Plans</button>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('./../asests/heroimage3.png');">
+               <div class="hero-content">
+                    <h1>Track Your Ride in Real Time</h1>
+                    <p>SStay updated with GPS-enabled vehicles and live status updates.</p>
+                    <button class="btn-primary">Track Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Moved inside slider-wrapper -->
+        <div class="nav-btn prev" onclick="showSlide(currentSlide - 1)"><i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="nav-btn next" onclick="showSlide(currentSlide + 1)"><i class="fas fa-chevron-right"></i>
+        </div>
+
+        <div class="dots">
+            <div class="dot" onclick="showSlide(0)"></div>
+            <div class="dot" onclick="showSlide(1)"></div>
+            <div class="dot" onclick="showSlide(2)"></div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- hero section END -->
+
+
+<section class="contact-section">
+    <div class="container">
+      <div class="map-form-wrapper">
+        <!-- Contact Form Box -->
+        <div class="form-box">
+          <h2 class="form-title">Get In Touch</h2>
+          <p class="form-description">We’d love to hear from you. Fill out the form and we’ll get back to you soon!</p>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Full Name" required>
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+  
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+91-XXXXXXXXXX" required>
+  
+            <label for="message">Message / Inquiry</label>
+            <textarea id="message" rows="5" placeholder="Type your message here..."></textarea>
+  
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+  
+        <!-- Map and Office Info -->
+        <div class="map-box">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2291.4552807337414!2d85.1497685479722!3d25.611008329105073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed586d2a6acdbf%3A0x259a8429ad10a5d4!2sEco%20Park!5e0!3m2!1sen!2sin!4v1682001603615!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-overlay">
+            <div class="address">
+              <h2>Head Office</h2>
+              <p>BlueWave Mobility Services Pvt. Ltd.<br>
+                Near Eco Park, Patna, Bihar – 800014</p>
+            </div>
+            <div class="contact-info">
+              <h2>Contact</h2>
+              <p>📞 <a href="tel:+919876543210">+91-9876543210</a><br>
+                ✉️ <a href="mailto:contact@bluewave.in">contact@bluewave.in</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="signup-section">
+    <div class="signup-container">
+      <div class="signup-content">
+        <h1 class="signup-title">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
+        <p class="signup-description">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
+      </div>
+      <div class="signup-form-box">
+        <h2 class="form-title">Sign Up</h2>
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <button class="submit-btn">Button</button>
+        <p class="form-footer">Literally you probably haven't heard of them jean shorts.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer-section">
+    <div class="zigzag-bg">
+        <div class="footer-content container">
+            <div class="footer-logo">
+                <img src="./../asests/Logo A.svg" alt="BlueWave Logo" />
+                <p>BlueWave Transport — reliable, safe & timely employee travel.</p>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Email: info@bluewave.com</li>
+                        <li>Phone: +91 98765 43210</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 BlueWave Transport</p>
+        <div class="footer-animation-container"></div>
+        <div class="footer-bg"></div>
+        <div class="moving-car">
+            <img src="./../asests/Corporate Ride on a Smooth Journey.png" class="cab-animation" />
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+
+  <script src="./contact.js"></script>
+</body>
+</html>
