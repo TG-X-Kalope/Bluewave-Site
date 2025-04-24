@@ -938,7 +938,7 @@ section:not(.hero-section) {
 .safety-icon {
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   object-fit: contain;
   z-index: 1;
   position: relative;
@@ -950,7 +950,7 @@ section:not(.hero-section) {
   margin-bottom: 20px;
 }
 
-.safety-icon-wrapper::before {
+/* .safety-icon-wrapper::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -962,7 +962,7 @@ section:not(.hero-section) {
   border-radius: 50%;
   animation: sparkle 2s infinite;
   z-index: 0;
-}
+} */
 
 .safety-card h3 {
   font-size: 20px;
