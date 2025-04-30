@@ -2,68 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Employee Transportation Services</title>
-  <link rel="stylesheet" href="ets.css" />
-  <link rel="stylesheet" href="./../theme.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueWave Transport Services</title>
+    <link rel="stylesheet" href="./../theme.css" />
+    <link rel="stylesheet" href="./ets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <style>
+
+    </style>
 </head>
 
 <body>
-  <!-- HERO SECTION WITH HEADER OVERLAY -->
-  <section class="hero-section">
-    <div class="hero-overlay">
-      <header class="navbar">
-        <div class="logo">TransCab</div>
+    <!-- ✅ HERO SECTION WITH BACKGROUND CAROUSEL -->
+    <section class="hero-section">
 
-        <!-- Hamburger Menu -->
-        <div class="menu-toggle" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
+
+        <!-- ✅ Your Overlay and Content -->
+
+        <header class="navbar">
+            <div class="logo"><img src="./../asests/Favicon A.svg" alt="logo" /></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span><span></span><span></span>
+                <div class="dropdown-card" id="dropdownCard">
+                    <div class="dropdown-links">
+                        <a href="./../index.html">Home</a>
+                        <hr />
+                        <a href="./../aboutus/about.html">About</a>
+                        <hr />
+                        <a href="./../employservicetransport/ets.html">Services</a>
+                        <hr />
+                       
+                       
+                        <a href="./../contactpage/contact.html">Contact</a>
+                        <hr />
+                        <a href="./../blogpage/blogpage.html">Blogs</a>
+                        <hr />
+                        <button class="btn-primary">Get in Touch</button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="./../index.html" >Home</a>
+                <a href="./../aboutus/about.html">About</a>
+                <a href="/" class="active">Services</a>
+                <a href="./../contactpage/contact.html">Contact</a>
+                <a href="./../blogpage/blogpage.html">Blogs</a>
+              
+            </nav>
+
+            <div class="cta" id="cta-btn">
+                <button class="btn-primary">Get in Touch</button>
+            </div>
+        </header>
+        <div class="slider-wrapper" style="height: 100vh; overflow: hidden;">
+            <div class="slides">
+                <div class="slide" style="background-image: url('./../asests/herobluewave.png');">
+                    <div class="hero-content">
+                        <h1>Safe & Reliable Employee Transportation</h1>
+                        <p>Efficient corporate cab solutions for hassle-free employee movement.</p>
+                        <button class="btn-primary">Book a Service</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('./../asests/heroimage-trp.png');">
+                    <div class="hero-content">
+                        <h1>Corporate Shuttle Made Easy</h1>
+                        <p>Seamless daily rides from home to office with comfort and punctuality.</p>
+                        <button class="btn-primary">View Shuttle Plans</button>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('./../asests/heroimage3.png');">
+                   <div class="hero-content">
+                        <h1>Track Your Ride in Real Time</h1>
+                        <p>SStay updated with GPS-enabled vehicles and live status updates.</p>
+                        <button class="btn-primary">Track Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moved inside slider-wrapper -->
+            <div class="nav-btn prev" onclick="showSlide(currentSlide - 1)"><i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="nav-btn next" onclick="showSlide(currentSlide + 1)"><i class="fas fa-chevron-right"></i>
+            </div>
+
+            <div class="dots">
+                <div class="dot" onclick="showSlide(0)"></div>
+                <div class="dot" onclick="showSlide(1)"></div>
+                <div class="dot" onclick="showSlide(2)"></div>
+            </div>
         </div>
 
-        <!-- Mobile Dropdown Menu -->
-        <div class="dropdown-card" id="dropdownCard">
-          <div class="dropdown-links">
-            <a href="./../index.html">Home</a>
-            <hr />
-            <a href="./../aboutus/about.html">About</a>
-            <hr />
-            <a href="#">Services</a>
-             <hr />
-            <a href="./../contactpage/contact.html">Contact</a>
-            <hr />
-            <button class="btn-primary">Track Ride</button>
-          </div>
-        </div>
 
-        <!-- Desktop Nav -->
-        <nav class="nav-links" id="nav-links">
-          <a href="./../index.html">Home</a>
-          <a href="./../aboutus/about.html">About</a>
+    </section>
 
-          <a href="#" class="active">Services</a>
-          <a href="./../contactpage/contact.html">Contact</a>
-        </nav>
 
-        <!-- Call to Action (Desktop) -->
-        <div class="cta" id="cta-btn">
-          <button class="btn-primary">Track Ride</button>
-        </div>
-      </header>
 
-      <!-- Hero Content -->
-      <div class="hero-content">
-        <h1>Dedicated Employee Transport Services</h1>
-        <p>We provide secure and professional transportation solutions for your workforce, ensuring timely and safe
-          commutes.</p>
-        <button class="btn-primary">Get Started</button>
-      </div>
-    </div>
-  </section>
+    <!-- hero section END -->
+
 
   <!-- Intro to Employee Transport Services Section -->
 
@@ -207,7 +246,7 @@
 
   <section class="adhoc-section">
     <div class="adhoc-container">
-      <h2 class="adhoc-heading">Adhoc / On-demand Cab Booking</h2>
+      <h2 class="adhoc-heading">On-demand Cab Booking</h2>
       <p class="adhoc-subtext">
         For those unexpected needs – book a cab instantly, without prior scheduling. Fast, safe, and always ready.
       </p>
@@ -247,7 +286,7 @@
          
             <div class="safety-card">
               <div class="safety-icon-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" class="safety-icon" alt="GPS">
+                <img src="./../asests/gps-tracker.gif" class="safety-icon" alt="GPS">
               </div>
               <h3>Live GPS Tracking</h3>
               <p>Track your ride in real-time with accurate location updates for safety and transparency.</p>
@@ -259,7 +298,7 @@
         
             <div class="safety-card">
               <div class="safety-icon-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/1995/1995593.png" class="safety-icon" alt="Driver">
+                <img src="./../asests/shield.gif" class="safety-icon" alt="Driver">
               </div>
               <h3>Verified Drivers</h3>
               <p>All drivers are background-checked and trained for safety, etiquette, and professionalism.</p>
@@ -271,7 +310,7 @@
        
             <div class="safety-card">
               <div class="safety-icon-wrapper">
-                <img src="https://cdn-icons-png.flaticon.com/512/483/483361.png" class="safety-icon" alt="Emergency">
+                <img src="./../asests/sos.gif" class="safety-icon" alt="Emergency">
               </div>
               <h3>Emergency Support</h3>
               <p>With an in-app SOS button, your emergency contacts are notified instantly with your live location.</p>
