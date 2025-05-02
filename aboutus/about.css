@@ -283,7 +283,7 @@ body {
 
 
 /* ========== DROPDOWN STYLING ========== */
-.dropdown-card {
+/* .dropdown-card {
     display: none;
     position: absolute;
     top: 100%;
@@ -301,7 +301,7 @@ body {
     background-position: bottom;
     background-size: cover;
     padding: 1.5rem 2rem;
-}
+} */
 
 .dropdown-card.active {
     display: block;
@@ -444,7 +444,7 @@ section:not(.hero-section) {
   margin-bottom: 15px;
   }
   
-  .mission-section::before {
+  /* .mission-section::before {
     content: '';
     position: absolute;
     top: -30px;
@@ -456,7 +456,7 @@ section:not(.hero-section) {
     background-size: cover;
     border-radius: var(--radius-large);
     z-index: 0;
-  }
+  } */
   
   .mission-wrapper {
     display: flex;
@@ -532,7 +532,7 @@ section:not(.hero-section) {
     /* box-shadow: var(--box-shadow-light); */
   }
 
-  .journey-section::before {
+  /* .journey-section::before {
     content: '';
     position: absolute;
     top: -30px;
@@ -544,7 +544,7 @@ section:not(.hero-section) {
     background-size: cover;
     border-radius: var(--radius-large);
     z-index: 0;
-  }
+  } */
 
   .journey-flex {
     display: flex;
@@ -662,7 +662,7 @@ section:not(.hero-section) {
     color: var(--color-primary-dark);
   }
   
-  .why-choose-us-section::before {
+  /* .why-choose-us-section::before {
     content: '';
     position: absolute;
     top: -30px;
@@ -674,7 +674,7 @@ section:not(.hero-section) {
     background-size: cover;
     border-radius: var(--radius-large);
     z-index: 0;
-  }
+  } */
   
   .choose-us-wrapper {
     display: flex;
@@ -759,7 +759,7 @@ section:not(.hero-section) {
     z-index: 1;
   }
   
-  .team-section::before {
+  /* .team-section::before {
     content: '';
     position: absolute;
     top: -30px;
@@ -771,7 +771,7 @@ section:not(.hero-section) {
     background-size: cover;
     border-radius: 50px;
     z-index: 0;
-  }
+  } */
   
   .team-container {
     max-width: 1200px;
@@ -869,7 +869,7 @@ section:not(.hero-section) {
     position: relative;
   }
   
-  .service-footprint::before {
+  /* .service-footprint::before {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -879,7 +879,7 @@ section:not(.hero-section) {
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%230077C8' fill-opacity='0.15' d='M0,160L60,138.7C120,117,240,75,360,101.3C480,128,600,224,720,229.3C840,235,960,149,1080,138.7C1200,128,1320,192,1380,224L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") no-repeat center top;
     background-size: cover;
     z-index: -1;
-  }
+  } */
   
   .container {
     max-width: 1200px;
