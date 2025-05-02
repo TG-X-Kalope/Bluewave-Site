@@ -254,33 +254,32 @@ function stopAutoSlide() {
 const steps = [
   {
     title: "Select Service Type",
-    desc: "Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs.",
-    img: "./asests/bookingimg2.png"
+    desc: "Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
   },
   {
     title: "Enter Ride Details",
-    desc: "Provide accurate pickup and drop-off details along with the preferred ride timing. This helps us allocate the right vehicle at the right time.",
-    img: "./asests/bookingimg2.png"
+    desc: "Provide accurate pickup and drop-off details along with the preferred ride timing. This helps us allocate the right vehicle at the right time.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
   },
   {
     title: "Confirm & Track",
-    desc: "Finalize your booking in one click and track your ride in real-time with updates on driver location, estimated arrival time, and route.",
-    img: "./asests/benefits-employee-transport-software-768x512.jpg"
+    desc: "Finalize your booking in one click and track your ride in real-time with updates on driver location, estimated arrival time, and route.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
   }
 ];
 
 function showStep(index) {
-  const title = document.getElementById('step-title');
-  const desc = document.getElementById('step-desc');
-  const img = document.getElementById('step-img');
+  document.getElementById('step-title').innerHTML = steps[index].title;
+  document.getElementById('step-desc').innerHTML = steps[index].desc;
 
-  if (title && desc && img) {
-    title.innerText = steps[index].title;
-    desc.innerText = steps[index].desc;
-    img.src = steps[index].img;
-  }
-
-  document.querySelectorAll('.tab-button').forEach((btn, i) => {
-    btn.classList.toggle('active', i === index);
+  // Active tab switch
+  const tabs = document.querySelectorAll('.booking-tab');
+  tabs.forEach((tab, i) => {
+    tab.classList.toggle('active', i === index);
   });
+
+  // Underline position switch
+  const underline = document.getElementById('step-underline');
+  underline.classList.remove('underline-left', 'underline-center', 'underline-right');
+  if (index === 0) underline.classList.add('underline-left');
+  else if (index === 1) underline.classList.add('underline-center');
+  else if (index === 2) underline.classList.add('underline-right');
 }
