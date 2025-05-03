@@ -283,3 +283,61 @@ function showStep(index) {
   else if (index === 1) underline.classList.add('underline-center');
   else if (index === 2) underline.classList.add('underline-right');
 }
+
+
+
+
+// const wrapper = document.getElementById("blogScroll");
+
+// function highlightCenterCards() {
+//   const wrapperRect = wrapper.getBoundingClientRect();
+//   const wrapperCenter = wrapperRect.left + wrapperRect.width / 2;
+
+//   const cards = wrapper.querySelectorAll(".blog-card");
+
+//   // Calculate the distance between the center of the wrapper and each card
+//   let closestCards = [...cards]
+//     .map(card => {
+//       const cardRect = card.getBoundingClientRect();
+//       const cardCenter = cardRect.left + cardRect.width / 2;
+//       const distance = Math.abs(wrapperCenter - cardCenter);
+//       return { card, distance };
+//     })
+//     .sort((a, b) => a.distance - b.distance)
+//     .slice(0, 2); // Get the 2 closest cards
+
+//   // Remove all classes from the cards
+//   cards.forEach(card => {
+//     card.classList.remove("active", "center", "left", "right");
+//   });
+
+//   // Add active class to the closest cards
+//   closestCards.forEach(({ card }, index) => {
+//     card.classList.add("active");
+//     if (index === 0) {
+//       card.classList.add("center"); // First closest card in the center
+//     } else {
+//       card.classList.add("center"); // Second closest card in the center
+//     }
+//   });
+
+//   // Add the "left" and "right" classes to the other cards
+//   const remainingCards = cards.filter(card => !card.classList.contains("center"));
+//   remainingCards.forEach(card => {
+//     card.classList.add("right");
+//   });
+// }
+
+// let ticking = false;
+// wrapper.addEventListener("scroll", () => {
+//   if (!ticking) {
+//     window.requestAnimationFrame(() => {
+//       highlightCenterCards();
+//       ticking = false;
+//     });
+//     ticking = true;
+//   }
+// });
+
+// window.addEventListener("load", highlightCenterCards);
+// window.addEventListener("resize", highlightCenterCards);

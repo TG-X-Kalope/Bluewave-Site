@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="theme.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 
 
     <style>
@@ -169,10 +171,10 @@
     </section>
 
     <!-- Booking Process section -->
-    <h2 class="booking-title">Booking Process Overview</h2>
+  
 
     <section class="booking-process-section">
-
+        <h2 class="booking-title">Booking Process Overview</h2>
         <div class="booking-container">
 
             <!-- TABS -->
@@ -205,7 +207,7 @@
         <div class="features">
             <div class="card">
                 <div class="icon-wrapper">
-                    <i class="fas fa-shield-alt icon"></i>
+                    <i class="bx bx-git-branch icon"></i>
                 </div>
                 <h3>Reliable Service</h3>
                 <p>Dependable transportation with timely pickups and drop-offs for all clients.</p>
@@ -213,7 +215,7 @@
 
             <div class="card">
                 <div class="icon-wrapper">
-                    <i class="fas fa-map-marked-alt icon"></i>
+                    <i class="bx bx-car icon"></i>
                 </div>
                 <h3>GPS Tracking</h3>
                 <p>Real-time tracking ensures safety and peace of mind for employees and employers.</p>
@@ -221,15 +223,19 @@
 
             <div class="card">
                 <div class="icon-wrapper">
-                    <i class="fas fa-user-shield icon"></i>
+                  <!-- 🛡️ Shield Icon (Reliable Service) -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#28a745" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3z"/>
+                  </svg>
                 </div>
-                <h3>Trained Drivers</h3>
-                <p>Professionally trained drivers with a focus on safety and courteous service.</p>
-            </div>
+                <h3>Reliable Service</h3>
+                <p>Dependable transportation with timely pickups and drop-offs for all clients.</p>
+              </div>
+              
 
             <div class="card">
                 <div class="icon-wrapper">
-                    <i class="fas fa-clock icon"></i>
+                    <i class="bx bx-time icon"></i>
                 </div>
                 <h3>Flexible Timing</h3>
                 <p>Customizable pickup and drop schedules to match company working hours.</p>
@@ -238,12 +244,17 @@
             <!-- 🆕 New Card 1 -->
             <div class="card">
                 <div class="icon-wrapper">
-                    <i class="fas fa-wallet icon"></i>
+                  <!-- 💼 Wallet Icon for Cost Effective -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <path d="M21 8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2"/>
+                    <path d="M3 8v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8"/>
+                    <path d="M16 12h2"/>
+                  </svg>
                 </div>
                 <h3>Cost Effective</h3>
                 <p>Budget-friendly plans tailored for businesses of all sizes.</p>
-            </div>
-
+              </div>
+              
             <!-- 🆕 New Card 2 -->
             <div class="card">
                 <div class="icon-wrapper">
@@ -257,7 +268,43 @@
     </section>
 
 
-
+    <section class="how-it-works-section">
+        <h2 class="section-title">How It Works</h2>
+        <div class="work-steps">
+          <div class="step-card">
+            <div class="icon-circle">
+              <!-- Custom SVG Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="#28a745" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3>Consultation</h3>
+            <p>Tell us your transport needs</p>
+          </div>
+          <div class="step-card">
+            <div class="icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="#28a745" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3>Planning</h3>
+            <p>We propose optimal routes and costs</p>
+          </div>
+          <div class="step-card">
+            <div class="icon-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="#28a745" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3>Onboarding</h3>
+            <p>We launch service for your employees</p>
+          </div>
+        </div>
+      </section>
+      
 
 
     <!-- <section class="how-it-works-section">
@@ -407,43 +454,48 @@
         </div>
     </section>
 
+    
     <section class="blog-section">
-        <h2 class="section-title">From Our Blog</h2>
-        <div class="blog-grid">
-            <!-- <div class="arrow left-arrow">
-                <img src="./asests/leftarrows.gif" alt="Left Arrow" />
-            </div> -->
-            <div class="card">
-                <div class="card-banner">
-                    <img src="./asests/corporate.webp" alt="Icon" />
-                </div>
-                <h3>Corporate Carpooling: Why It’s the Future</h3>
-                <p>Eco-friendly, cost-effective and socially responsible.</p>
-                <a href="#" class="btn-read-more">Read More</a>
+        <div class="container">
+          <h2 class="blog-title">From Our Blog</h2>
+         
+      
+          <div class="blog-scroll-wrapper" id="blogScroll">
+            <div class="blog-card">
+              <img src="./asests/blogimg1.png" alt="Image" class="blog-img" />
+              <p class="blog-text">Echo park, helvetica stumptown taiyaki taxidermy cronut kinfolk.Cloud bread retro echo park helvetica stumptown.Cloud bread retro echo park helvetica stumptown.</p>
+              <a href="#" class="blog-link">Click to view more »</a>
             </div>
 
-            <div class="card">
-                <div class="card-banner">
-                    <img src="./asests/benefits-employee-transport-software-768x512.jpg" alt="Icon" />
-                </div>
-                <h3>Corporate Carpooling: Why It’s the Future</h3>
-                <p>Eco-friendly, cost-effective and socially responsible.</p>
-                <a href="#" class="btn-read-more">Read More</a>
+            <div class="blog-card">
+                <img src="./asests/blogimg1.png" alt="Image" class="blog-img" />
+                <p class="blog-text">Echo park, helvetica stumptown taiyaki taxidermy cronut kinfolk.Cloud bread retro echo park helvetica stumptown.Cloud bread retro echo park helvetica stumptown.</p>
+                <a href="#" class="blog-link">Click to view more »</a>
+              </div>
+              
+            <div class="blog-card">
+              <img src="./asests/blogimg1.png" alt="Image" class="blog-img" />
+              <p class="blog-text">Cloud bread retro echo park helvetica stumptown.Cloud bread retro echo park helvetica stumptown.Cloud bread retro echo park helvetica stumptown.</p>
+              <a href="#" class="blog-link">Click to view more »</a>
             </div>
-            <div class="card">
-                <div class="card-banner">
-                    <img src="./asests/corporate.webp" alt="Icon" />
-                </div>
-                <h3>Corporate Carpooling: Why It’s the Future</h3>
-                <p>Eco-friendly, cost-effective and socially responsible.</p>
-                <a href="#" class="btn-read-more">Read More</a>
+            <div class="blog-card">
+              <img src="./asests/blogimg1.png" alt="Image" class="blog-img" />
+              <p class="blog-text">Kinfolk tbh artisan polaroid thundercats air plant echo.New insight from tech industry on sustainable solutions.</p>
+              <a href="#" class="blog-link">Click to view more »</a>
             </div>
+            
+
+            <div class="blog-card">
+                <img src="./asests/blogimg1.png" alt="Image" class="blog-img" />
+                <p class="blog-text">New insight from tech industry on sustainable solutions.New insight from tech industry on sustainable solutions.New insight from tech industry on sustainable solutions.</p>
+                <a href="#" class="blog-link">Click to view more »</a>
+              </div>
+              
+          </div>
         </div>
-        <!-- <div class="arrow right-arrow">
-            <img src="./asests/rightarrows.gif" alt="Right Arrow" />
-        </div> -->
-        </div>
-    </section>
+      </section>
+      
+      
 
     <section class="contact-section">
         <h2 class="contact-title">Contact Us</h2>
@@ -494,7 +546,7 @@
                 <!-- Left: Logo on diagonal -->
                 <div class="footer-logo">
                     <img src="./asests/Logo B 2.png" alt="BlueWave Logo" class="footer-logo-img"/>
-                    <p class="footer-tagline">BlueWave Transport — reliable,<br>safe & timely employee travel.</p>
+                    <p class="footer-tagline">BlueWave Transport — reliable,safe & timely employee travel.</p>
                 </div>
     
                 <!-- Center: Quick Links and Follow Us -->
@@ -510,11 +562,14 @@
                     <div class="footer-column">
                         <h4>Follow Us</h4>
                         <div class="social-icons">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                          <a href="#"><i class="fab fa-facebook-f"></i></a> <!-- Facebook -->
+                          <a href="#"><i class="fab fa-youtube"></i></a>     <!-- YouTube -->
                         </div>
-                    </div>
+                      </div>
+                      
                 </div>
     
                 <!-- Right: Contact Info -->
