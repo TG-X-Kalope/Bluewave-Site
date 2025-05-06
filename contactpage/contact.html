@@ -1,103 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | BlueWave Mobility</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./../theme.css">
-  <link rel="stylesheet" href="./contact.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueWave Transport Services</title>
+    <link rel="stylesheet" href="./../theme.css" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
- 
-  
+
+
+    <style>
+
+    </style>
 </head>
+
 <body>
-  <!-- ✅ HERO SECTION WITH BACKGROUND CAROUSEL -->
-  <section class="hero-section">
+    <!-- ✅ HERO SECTION WITH BACKGROUND CAROUSEL -->
+    <section class="hero-section">
 
 
-    <!-- ✅ Your Overlay and Content -->
+        <!-- ✅ Your Overlay and Content -->
+        <header class="navbar">
+            <div class="logo-container">
+                <img src="./../asests/logo-name.png" class="logo full-logo" />
+                <img src="./../asests/Favicon C.svg" class="logo small-logo" />
+            </div>
 
-    <header class="navbar">
-        <div class="logo"><img src="./../asests/Favicon A.svg" alt="logo" /></div>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span><span></span><span></span>
+            <!-- ✅ Toggle button for mobile -->
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+
+            <!-- ✅ Dropdown for mobile view -->
             <div class="dropdown-card" id="dropdownCard">
                 <div class="dropdown-links">
                     <a href="./../index.html">Home</a>
-                    <hr />
+
                     <a href="./../aboutus/about.html">About</a>
-                    <hr />
+
                     <a href="./../employservicetransport/ets.html">Services</a>
-                    <hr />
-                    <a href="#">Contact</a>
-                    <hr />
 
                     <a href="./../blogpage/blogpage.html">Blogs</a>
-                    <hr />
 
+                    <a href="#">Contact</a>
+
+                  
                     <button class="btn-primary">Get in Touch</button>
                 </div>
             </div>
+
+            <!-- ✅ Normal navbar links for desktop -->
+            <nav class="nav-links" id="nav-links">
+                <a href="./../index.html">Home</a>
+                <a href="./../aboutus/about.html">About</a>
+                <a href="./../employservicetransport/ets.html">Services</a>
+                <a href="./../blogpage/blogpage.html">Blogs</a>
+                <a href="#"class="active">Contact</a>
+               
+            </nav>
+
+            <!-- ✅ CTA for desktop -->
+            <div class="cta" id="cta-btn">
+                <button class="btn-primary">Get in Touch</button>
+            </div>
+        </header>
+
+        <div class="slider-wrapper" style="overflow: hidden; position: relative; height: 100vh;">
+            <div class="slides" style="display: flex; width: max-content;">
+                <div class="slide" style="min-width: 100vw; background-image: url('./../asests/herobluewave.png');">
+                    <div class="hero-content">
+                        <h1>Safe & Reliable Employee Transportation</h1>
+                        <p>Efficient corporate cab solutions for hassle-free employee movement.</p>
+                        <button class="btn-primary">Book a Service</button>
+                    </div>
+                </div>
+                <div class="slide" style="min-width: 100vw; background-image: url('./../asests/heroimage-trp.png');">
+                    <div class="hero-content">
+                        <h1>Corporate Shuttle Made Easy</h1>
+                        <p>Seamless daily rides from home to office with comfort and punctuality.</p>
+                        <button class="btn-primary">View Shuttle Plans</button>
+                    </div>
+                </div>
+                <div class="slide" style="min-width: 100vw; background-image: url('./../asests/heroimage3.png');">
+                    <div class="hero-content">
+                        <h1>Track Your Ride in Real Time</h1>
+                        <p>Stay updated with GPS-enabled vehicles and live status updates.</p>
+                        <button class="btn-primary">Track Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <nav class="nav-links" id="nav-links">
-            <a href="./../index.html" >Home</a>
-            <a href="./../aboutus/about.html">About</a>
-            <a href="./../employservicetransport/ets.html">Services</a>
-            <a href="#" class="active">Contact</a>
-            <a href="./../blogpage/blogpage.html">Blogs</a>
-        </nav>
-
-        <div class="cta" id="cta-btn">
-            <button class="btn-primary">Get in Touch</button>
-        </div>
-    </header>
-    <div class="slider-wrapper" style="height: 100vh; overflow: hidden;">
-        <div class="slides">
-            <div class="slide" style="background-image: url('./../asests/herobluewave.png');">
-                <div class="hero-content">
-                    <h1>Safe & Reliable Employee Transportation</h1>
-                    <p>Efficient corporate cab solutions for hassle-free employee movement.</p>
-                    <button class="btn-primary">Book a Service</button>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./../asests/heroimage-trp.png');">
-                <div class="hero-content">
-                    <h1>Corporate Shuttle Made Easy</h1>
-                    <p>Seamless daily rides from home to office with comfort and punctuality.</p>
-                    <button class="btn-primary">View Shuttle Plans</button>
-                </div>
-            </div>
-            <div class="slide" style="background-image: url('./../asests/heroimage3.png');">
-               <div class="hero-content">
-                    <h1>Track Your Ride in Real Time</h1>
-                    <p>SStay updated with GPS-enabled vehicles and live status updates.</p>
-                    <button class="btn-primary">Track Now</button>
-                </div>
-            </div>
-        </div>
 
         <!-- Moved inside slider-wrapper -->
-        <div class="nav-btn prev" onclick="showSlide(currentSlide - 1)"><i class="fas fa-chevron-left"></i>
-        </div>
-        <div class="nav-btn next" onclick="showSlide(currentSlide + 1)"><i class="fas fa-chevron-right"></i>
-        </div>
+        <!-- <div class="nav-btn prev" onclick="showSlide(currentSlide - 1)"><i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="nav-btn next" onclick="showSlide(currentSlide + 1)"><i class="fas fa-chevron-right"></i>
+            </div> -->
 
-        <div class="dots">
-            <div class="dot" onclick="showSlide(0)"></div>
-            <div class="dot" onclick="showSlide(1)"></div>
-            <div class="dot" onclick="showSlide(2)"></div>
-        </div>
-    </div>
-
-
-</section>
+        <!-- <div class="dots">
+                <div class="dot" onclick="showSlide(0)"></div>
+                <div class="dot" onclick="showSlide(1)"></div>
+                <div class="dot" onclick="showSlide(2)"></div>
+            </div> -->
+        <!-- </div> -->
 
 
+    </section>
 
-<!-- hero section END -->
+
+
+    <!-- hero section END -->
 
 
 <section class="contact-section">
@@ -135,8 +149,13 @@
             </div>
             <div class="contact-info">
               <h2>Contact</h2>
-              <p>📞 <a href="tel:+919876543210">+91-9876543210</a><br>
-                ✉️ <a href="mailto:contact@bluewave.in">contact@bluewave.in</a></p>
+              <p>
+                <i class="fas fa-phone-alt contact-icon"></i>
+                <a href="tel:+919876543210">+91-9876543210</a><br>
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:contact@bluewave.in">contact@bluewave.in</a>
+              </p>
+              
             </div>
           </div>
         </div>
@@ -172,13 +191,15 @@
   <footer class="footer-section">
     <div class="zigzag-bg">
         <div class="footer-content container">
+            <!-- Left: Logo on diagonal -->
             <div class="footer-logo">
-                <img src="./../asests/Logo A.svg" alt="BlueWave Logo" />
-                <p>BlueWave Transport — reliable, safe & timely employee travel.</p>
+                <img src="./../asests/Logo B 2.png" alt="BlueWave Logo" class="footer-logo-img"/>
+                <p class="footer-tagline">BlueWave Transport — reliable,safe & timely employee travel.</p>
             </div>
 
-            <div class="footer-grid">
-                <div>
+            <!-- Center: Quick Links and Follow Us -->
+            <div class="footer-center">
+                <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="/">Home</a></li>
@@ -186,38 +207,34 @@
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4>Contact Info</h4>
-                    <ul>
-                        <li>Email: info@bluewave.com</li>
-                        <li>Phone: +91 98765 43210</li>
-                    </ul>
-                </div>
-
-                <div>
+                <div class="footer-column">
                     <h4>Follow Us</h4>
                     <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a> <!-- Facebook -->
+                      <a href="#"><i class="fab fa-youtube"></i></a>     <!-- YouTube -->
                     </div>
-                </div>
+                  </div>
+                  
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>Email: info@bluewave.com</li>
+                    <li>Phone: +91 98765 43210</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="footer-bottom">
         <p>© 2025 BlueWave Transport</p>
-        <div class="footer-animation-container"></div>
-        <div class="footer-bg"></div>
-        <div class="moving-car">
-            <img src="./../asests/Corporate Ride on a Smooth Journey.png" class="cab-animation" />
-        </div>
-    </div>
     </div>
 </footer>
-
 
 
   <script src="./contact.js"></script>
