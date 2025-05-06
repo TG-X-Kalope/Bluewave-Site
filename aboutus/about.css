@@ -669,14 +669,48 @@ transition: transform 0.5s ease-in-out;}
   }
 
   @media (max-width: 768px) {
+    .journey-section {
+      padding: 2rem 1rem;
+    }
+  
     .journey-flex {
       flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .journey-title {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .journey-description {
+      font-size: 14px;
+      text-align: justify;
     }
   
     .journey-image {
-      margin-top: 2rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  
+    .journey-image img {
+      max-width: 90%;
+      height: auto;
+    }
+  
+    .timeline-step {
+      padding-left: 2rem;
+    }
+  
+    .timeline-year {
+      font-size: 1rem;
+    }
+  
+    .timeline-desc {
+      font-size: 13px;
     }
   }
+  
   
   
   
@@ -771,10 +805,46 @@ transition: transform 0.5s ease-in-out;}
   }
   
   @media (max-width: 768px) {
-    .step-wrapper {
-      width: 100%;
+    .why-choose-us-section {
+      padding: 2rem 1rem;
+    }
+  
+    .why-choose-us-title {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  
+    .choose-us-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .how-step {
+      padding: 20px 15px;
+      max-width: 90%;
+    }
+  
+    .step-icon {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+  
+    .how-step h3 {
+      font-size: 18px;
+    }
+  
+    .how-step p {
+      font-size: 14px;
+    }
+  
+    .why-extra-text {
+      font-size: 14px;
+      padding: 0 1rem;
+      text-align: justify;
     }
   }
+  
   
   .team-section {
     position: relative;
@@ -873,11 +943,49 @@ transition: transform 0.5s ease-in-out;}
   }
   
   @media (max-width: 768px) {
+    .team-section {
+      padding: 2rem 1rem;
+    }
+  
+    .team-heading {
+      font-size: 22px;
+    }
+  
+    .team-subtext {
+      font-size: 14px;
+      padding: 0 1rem;
+      text-align: justify;
+    }
+  
     .team-cards {
       flex-direction: column;
       align-items: center;
+      gap: 1.5rem;
+    }
+  
+    .team-card {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .team-img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .team-card h3 {
+      font-size: 18px;
+    }
+  
+    .team-card p {
+      font-size: 13px;
+    }
+  
+    .social-icons a {
+      font-size: 1rem;
     }
   }
+  
 
 
   /* Section Styling */
@@ -1186,6 +1294,7 @@ transition: transform 0.5s ease-in-out;}
       padding-top: 100px;
       align-items: center;
       text-align: center;
+      padding: 80px 20px 40px;
   }
 
   .footer-logo {
@@ -1200,27 +1309,62 @@ transition: transform 0.5s ease-in-out;}
   }
 
   .footer-logo-img {
-      margin: 0 auto;
+    margin: 0 auto;
   }
 
   .footer-tagline {
-      text-align: center;
+    font-size: 13px;
+    max-width: 300px;
+    margin-top: 10px;
+    text-align: center;
   }
 
   .footer-center {
-      padding-left: 0;
-      align-items: center;
+    padding-left: 0;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .footer-column h4 {
+    text-align: center;
+  }
+
+  .footer-column ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .footer-column li {
+    font-size: 13px;
   }
 
   .footer-contact {
-      text-align: center;
-      margin-top: 30px;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .footer-contact li {
+    font-size: 13px;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
   }
 
   .zigzag-bg {
-      background: linear-gradient(-8deg, #0d2961 70%, var(--bg-light) 70%);
+    background: linear-gradient(-8deg, #0d2961 75%, var(--bg-light) 75%);
+    padding: 60px 20px 40px;
   }
 }
+
 
 
 
