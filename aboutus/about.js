@@ -121,29 +121,20 @@ let isTransitioning = false;
 let startX = 0;
 let currentX = 0;
 let isDragging = false;
-let animationID;
 let interval;
 
-// Clone slides for seamless looping
+// Clone first and last slide
 const firstClone = slides[0].cloneNode(true);
 const lastClone = slides[slides.length - 1].cloneNode(true);
 slideContainer.appendChild(firstClone);
 slideContainer.prepend(lastClone);
 slides = document.querySelectorAll('.slide');
 
-const slideWidth = window.innerWidth;
+let slideWidth = window.innerWidth;
 slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
-// Transition to slide
-function goToSlide(index) {
-  isTransitioning = true;
-  slideContainer.style.transition = 'transform 0.5s ease';
-  slideContainer.style.transform = `translateX(-${index * slideWidth}px)`;
-  currentSlide = index;
-}
-
-// After transition (handle clones)
-slideContainer.addEventListener('transitionend', () => {
+// Handle transition end and fallback
+function correctClonesIfNeeded() {
   slideContainer.style.transition = 'none';
   if (slides[currentSlide].isSameNode(firstClone)) {
     currentSlide = 1;
@@ -153,10 +144,25 @@ slideContainer.addEventListener('transitionend', () => {
     slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
   }
   isTransitioning = false;
-  startAutoSlide();  // Restart auto-slide after transition
-});
+}
 
-// Auto-slide
+slideContainer.addEventListener('transitionend', correctClonesIfNeeded);
+
+// Slide transition
+function goToSlide(index) {
+  if (isTransitioning) return;
+  isTransitioning = true;
+  slideContainer.style.transition = 'transform 0.5s ease';
+  slideContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+  currentSlide = index;
+
+  // Fallback in case transitionend doesn't fire
+  setTimeout(() => {
+    if (isTransitioning) correctClonesIfNeeded();
+  }, 600);
+}
+
+// Auto slide
 function startAutoSlide() {
   clearInterval(interval);
   interval = setInterval(() => {
@@ -165,18 +171,25 @@ function startAutoSlide() {
 }
 startAutoSlide();
 
-// Drag functions
+function stopAutoSlide() {
+  clearInterval(interval);
+}
+
+// Drag functionality
 function startDrag(x) {
   isDragging = true;
   startX = x;
   currentX = x;
   slideContainer.style.transition = 'none';
-  cancelAnimationFrame(animationID);
+  stopAutoSlide();
 }
 
 function duringDrag(x) {
   currentX = x;
-  const translateX = -currentSlide * slideWidth + (currentX - startX);
+  const move = currentX - startX;
+  const maxMove = slideWidth;
+  const clampedMove = Math.max(-maxMove, Math.min(move, maxMove)); // avoid overscroll
+  const translateX = -currentSlide * slideWidth + clampedMove;
   slideContainer.style.transform = `translateX(${translateX}px)`;
 }
 
@@ -192,27 +205,11 @@ function endDrag() {
     goToSlide(currentSlide);
   }
   isDragging = false;
-  startAutoSlide();  // Restart auto-slide after drag
+  startAutoSlide();
 }
-
-// Wheel scroll to change slide
-slideContainer.addEventListener("wheel", (e) => {
-  if (isTransitioning || isDragging) return;
-
-  stopAutoSlide();
-
-  if (e.deltaX > 30) {
-    goToSlide(currentSlide + 1); // right swipe
-  } else if (e.deltaX < -30) {
-    goToSlide(currentSlide - 1); // left swipe
-  }
-
-  startAutoSlide();  // Restart auto-slide after wheel interaction
-});
 
 // Mouse Events
 slideContainer.addEventListener('mousedown', (e) => {
-  stopAutoSlide();
   startDrag(e.clientX);
 });
 
@@ -230,7 +227,6 @@ slideContainer.addEventListener('mouseleave', () => {
 
 // Touch Events
 slideContainer.addEventListener('touchstart', (e) => {
-  stopAutoSlide();
   startDrag(e.touches[0].clientX);
 });
 
@@ -242,11 +238,27 @@ slideContainer.addEventListener('touchend', () => {
   if (isDragging) endDrag();
 });
 
-// Stop slide
-function stopAutoSlide() {
-  clearInterval(interval);
-}
+// Wheel Scroll
+slideContainer.addEventListener("wheel", (e) => {
+  if (isTransitioning || isDragging) return;
 
+  stopAutoSlide();
+
+  if (e.deltaX > 30) {
+    goToSlide(currentSlide + 1); // right
+  } else if (e.deltaX < -30) {
+    goToSlide(currentSlide - 1); // left
+  }
+
+  startAutoSlide();
+});
+
+// Resize: recalculate slide width
+window.addEventListener('resize', () => {
+  slideWidth = window.innerWidth;
+  slideContainer.style.transition = 'none';
+  slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+});
   
 // Reveal animations on scroll
 const timelineSteps = document.querySelectorAll('.timeline-step');
