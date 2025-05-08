@@ -715,135 +715,222 @@ transition: transform 0.5s ease-in-out;}
   
   
   .why-choose-us-section {
-    padding: 3rem 12rem;
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 60px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-  
     background-color: var(--bg-light);
   }
-
-  .why-choose-us-title{
-    text-align: center;
+  
+  .why-choose-us-title {
     font-size: 28px;
     font-weight: 500;
     color: #111111;
     margin-bottom: 40px;
   }
   
-  
-  
   .choose-us-wrapper {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
-    position: relative;
-    z-index: 1;
+    justify-content: center;
+    align-items: stretch; /* Crucial for equal height */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
   }
   
   .step-wrapper {
-    flex: 1 1 300px;
+    flex: 1 1 calc(33.333% - 30px);
+    max-width: calc(33.333% - 30px);
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   
   .how-step {
     background-color: var(--bg-white);
-    padding: 30px 25px;
-    /* border-radius: var(--radius-medium); */
+    padding: 24px 20px;
     text-align: center;
-    /* box-shadow: 0 10px 30px rgba(0, 119, 200, 0.15);
-    border: 1px solid var(--color-primary); */
     transition: all 0.3s ease-in-out;
     width: 100%;
-    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 150px;
   }
   
   .how-step:hover {
     transform: translateY(-6px);
-    box-shadow: 0 5px 10px rgba(0, 119, 200, 0.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   }
   
   .step-icon {
     font-size: 40px;
-    display: inline-block;
-    padding: 10px;
-    /* background-color: var(--color-primary); */
-    color: green;
-    /* border-radius: 50%; */
+    color: #28a745;
     margin-bottom: 15px;
-    /* box-shadow: 0 4px 10px rgba(0, 119, 200, 0.2); */
+    transition: transform 0.3s, color 0.3s;
   }
-
   
+  .how-step:hover .step-icon {
+    transform: scale(1.1);
+    color: #22aa3c;
+  }
   
   .how-step h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--color-primary-dark);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   
   .how-step p {
     font-size: var(--font-size-small);
     color: var(--text-muted);
     line-height: 1.5;
+    flex-grow: 1;
   }
   
   .why-extra-text {
     max-width: 700px;
-    margin: 40px auto 0;
+    margin: 20px auto 0;
     font-size: 1rem;
     color: var(--text-primary);
     line-height: 1.6;
-    position: relative;
-    z-index: 1;
+    text-align: justify;
   }
   
+  /* Tablet - 2 in a row */
+  @media (max-width: 1024px) {
+    .step-wrapper {
+      flex: 1 1 calc(50% - 30px);
+      max-width: calc(50% - 30px);
+    }
+  }
+  
+  /* Mobile - 1 in a row */
   @media (max-width: 768px) {
     .why-choose-us-section {
       padding: 2rem 1rem;
     }
   
-    .why-choose-us-title {
-      font-size: 22px;
-      margin-bottom: 30px;
-    }
-  
-    .choose-us-wrapper {
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
+    .step-wrapper {
+      flex: 1 1 100%;
+      max-width: 100%;
     }
   
     .how-step {
       padding: 20px 15px;
-      max-width: 90%;
+      min-height: 150px;
     }
   
     .step-icon {
       font-size: 30px;
-      margin-bottom: 12px;
     }
   
     .how-step h3 {
-      font-size: 18px;
+      font-size: 16px;
     }
   
     .how-step p {
-      font-size: 14px;
+      font-size: 13px;
     }
   
     .why-extra-text {
       font-size: 14px;
       padding: 0 1rem;
-      text-align: justify;
     }
   }
+  
+  @media (max-width: 480px) {
+    .why-choose-us-title {
+      font-size: 24px;
+    }
+  
+    .step-icon {
+      font-size: 24px;
+    }
+  
+    .how-step {
+      padding: 16px 12px;
+      min-height: 150px;
+    }
+  }
+  
+  /* @media (min-width: 1440px) {
+    .choose-us-wrapper {
+      max-width: 1320px;
+      gap: 40px;
+      padding: 0 40px;
+    }
+  
+    .step-wrapper {
+      flex: 1 1 calc(33.333% - 40px);
+      max-width: calc(33.333% - 40px);
+    }
+  
+    .how-step {
+      padding: 32px 28px;
+    }
+  
+    .how-step h3 {
+      font-size: 20px;
+    }
+  
+    .how-step p {
+      font-size: 15px;
+    }
+  
+    .step-icon {
+      font-size: 48px;
+    }
+  
+    .why-choose-us-title {
+      font-size: 34px;
+    }
+  
+    .why-extra-text {
+      font-size: 1.1rem;
+      max-width: 800px;
+    }
+  } */
+  
+  /* @media (min-width: 1440px) {
+    .choose-us-wrapper {
+      max-width: 1400px;
+      gap: 40px;
+      padding: 0 32px;
+    }
+  
+    .step-wrapper {
+      flex: 1 1 calc(25% - 40px);
+      max-width: calc(25% - 40px);
+    }
+  
+    .how-step {
+      padding: 30px 24px;
+    }
+  
+    .how-step h3 {
+      font-size: 20px;
+    }
+  
+    .how-step p {
+      font-size: 15px;
+    }
+  
+    .step-icon {
+      font-size: 48px;
+    }
+  
+    .why-choose-us-title {
+      font-size: 32px;
+    }
+  
+    .why-extra-text {
+      font-size: 1.1rem;
+    }
+  } */
+  
   
   
   .team-section {
