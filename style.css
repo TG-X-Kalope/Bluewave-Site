@@ -858,7 +858,40 @@ form button {
     }
   }
   
-  
+ @media (min-width: 992px) and (max-width: 1279px) {
+  .timeline-container {
+    max-width: 1000px;
+  }
+
+  .point1 {
+ 
+    top: -12px;
+  }
+
+  .point2 {
+    left: 33%;
+    top: 230px;
+  }
+
+  .point3 {
+    right: 18%;
+    top: 20px;
+  }
+
+  .point2 .icon-text {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .text-content {
+    max-width: 240px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
+
   
   
   
