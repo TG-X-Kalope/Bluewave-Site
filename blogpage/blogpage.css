@@ -851,14 +851,14 @@ section:not(.hero-section) {
     }
   }
   
-  @media (min-width: 1440px) {
+  /* @media (min-width: 1440px) {
     .footer-content {
-      max-width: 1600px; /* expand container on ultra-wide screens */
+      max-width: 1600px; 
       padding: 80px 40px;
     }
   
     .footer-center {
-      padding-left: 250px; /* increase space offset for bigger screens */
+      padding-left: 250px; 
     }
   
     .footer-logo {
@@ -903,9 +903,9 @@ section:not(.hero-section) {
       background: linear-gradient(-12deg, #0d2961 64%, var(--bg-light) 64%);
       padding: 100px 40px 60px;
     }
-  }
+  } */
   
-  @media (min-width: 2000px) {
+  @media (min-width: 2500px) {
     .footer-content {
       max-width: 1800px;
       padding: 100px 60px;
@@ -931,7 +931,7 @@ section:not(.hero-section) {
   
     .zigzag-bg {
       background: linear-gradient(-10deg, #0d2961 64%, var(--bg-light) 64%);
-      padding: 120px 60px 80px;
+      padding: 160px 80px 100px;
     }
   }
   

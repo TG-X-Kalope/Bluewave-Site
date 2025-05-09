@@ -628,7 +628,7 @@ transition: transform 0.5s ease-in-out;}
 
   .timeline-step {
     position: relative;
-    padding-left: 3rem;
+    padding-left: 2rem;
     margin-bottom: 2rem;
     border-left: 3px solid var(--color-primary);
     opacity: 0;
@@ -711,10 +711,14 @@ transition: transform 0.5s ease-in-out;}
       max-width: 90%;
     }
   
-    .timeline-step {
+    /* .timeline-step {
       padding-left: 2rem;
     }
   
+    .timeline-step::before {
+      left: -7px;
+    } */
+
     .timeline-year {
       font-size: 1rem;
     }
@@ -733,15 +737,16 @@ transition: transform 0.5s ease-in-out;}
       font-size: 1.3rem;
     }
   
-    .timeline-step {
+    /* .timeline-step {
       padding-left: 1.5rem;
     }
   
     .timeline-step::before {
       top: 6px;
+      left: -6px;
       width: 12px;
       height: 12px;
-    }
+    } */
   
     .timeline-year {
       font-size: 0.95rem;
@@ -759,6 +764,9 @@ transition: transform 0.5s ease-in-out;}
       padding-right: 8rem;
     }
   }
+
+
+  
   
   .why-choose-us-section {
     padding: 60px 20px;
@@ -1169,7 +1177,7 @@ transition: transform 0.5s ease-in-out;}
 /* Medium screens and up: 3 cards */
 @media (min-width: 768px) {
   .city-cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1192,13 +1200,6 @@ transition: transform 0.5s ease-in-out;}
   max-width: 300px; /* Prevents stretching on small screens */
   text-align: center;
 }
-
-
-
-
-
-  
- 
   
   .city-card:hover {
     box-shadow: var(--box-shadow-dark);
@@ -1498,14 +1499,14 @@ transition: transform 0.5s ease-in-out;}
   }
 }
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
   .footer-content {
-    max-width: 1600px; /* expand container on ultra-wide screens */
+    max-width: 1600px; 
     padding: 80px 40px;
   }
 
   .footer-center {
-    padding-left: 250px; /* increase space offset for bigger screens */
+    padding-left: 250px; 
   }
 
   .footer-logo {
@@ -1550,9 +1551,9 @@ transition: transform 0.5s ease-in-out;}
     background: linear-gradient(-12deg, #0d2961 64%, var(--bg-light) 64%);
     padding: 100px 40px 60px;
   }
-}
+}*/
 
-@media (min-width: 2500px) {
+@media (min-width: 2560px) {
   .footer-content {
     max-width: 1800px;
     padding: 100px 60px;
@@ -1564,7 +1565,7 @@ transition: transform 0.5s ease-in-out;}
 
   .footer-logo {
     width: 300px;
-    bottom: 200px;
+    bottom: 180px;
   }
 
   .footer-logo-img {
@@ -1578,9 +1579,9 @@ transition: transform 0.5s ease-in-out;}
 
   .zigzag-bg {
     background: linear-gradient(-10deg, #0d2961 64%, var(--bg-light) 64%);
-    padding: 160px 80px 100px;
+    padding: 165px 85px 105px;
   }
-}
+} 
 
 
 
