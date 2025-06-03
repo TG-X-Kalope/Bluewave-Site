@@ -1064,7 +1064,7 @@ section:not(.hero-section) {
     }
   } */
   
-  @media (min-width: 2500px) {
+  @media (min-width: 2560px) {
     .footer-content {
       max-width: 1800px;
       padding: 100px 60px;
@@ -1076,7 +1076,7 @@ section:not(.hero-section) {
   
     .footer-logo {
       width: 300px;
-      bottom: 200px;
+      bottom: 180px;
     }
   
     .footer-logo-img {
@@ -1090,10 +1090,9 @@ section:not(.hero-section) {
   
     .zigzag-bg {
       background: linear-gradient(-10deg, #0d2961 64%, var(--bg-light) 64%);
-      padding: 160px 80px 100px;
+      padding: 165px 85px 105px;
     }
-  }
-  
+  } 
 
 /* .footer-animation {
     max-width: 120px;
