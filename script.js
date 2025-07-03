@@ -395,21 +395,21 @@ window.addEventListener('resize', () => {
 });
 
 
-// ==== BOOKING STEP LOGIC ====
 const steps = [
   {
     title: "Select Service Type",
-    desc: "Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
+    desc: "Choose the transport solution that best fits your organization. Whether you need dedicated shuttle services for daily commutes, scheduled corporate cabs for fixed routes, or flexible on-demand rides for occasional trips, BlueWave offers customizable options to match your exact requirements. Our team will work with you to design an efficient transportation plan that prioritizes safety and convenience."
   },
   {
-    title: "Enter Ride Details",
-    desc: "Provide accurate pickup and drop-off details along with the preferred ride timing. This helps us allocate the right vehicle at the right time.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
+    title: "Provide Ride Details",
+    desc: "Fill in all necessary ride information including pickup and drop-off addresses, preferred pickup times, passenger count, and any special instructions or accessibility needs. Providing accurate details helps us allocate the right vehicle and ensure a timely and smooth experience for your employees. Our system allows you to schedule single rides or create recurring bookings as per your business needs."
   },
   {
-    title: "Confirm & Track",
-    desc: "Finalize your booking in one click and track your ride in real-time with updates on driver location, estimated arrival time, and route.<br>Choose between shuttle service, corporate contract, or on-demand cab for a personalized travel experience tailored to your organization’s needs."
+    title: "Confirm & Track Your Ride",
+    desc: "Review all booking details carefully before confirming your reservation. Once confirmed, you will receive instant booking confirmation along with driver and vehicle information. Use our real-time tracking system to monitor your ride, view estimated arrival times, and receive notifications about driver status and route updates to stay informed every step of the way."
   }
 ];
+
 
 function showStep(index) {
   document.getElementById('step-title').innerHTML = steps[index].title;

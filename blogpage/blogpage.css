@@ -591,6 +591,18 @@ section:not(.hero-section) {
     align-items: center;
   }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-footer {
+  margin-top: 1rem;
+}
+
+
   .learn-more svg {
     margin-left: 6px;
   }
